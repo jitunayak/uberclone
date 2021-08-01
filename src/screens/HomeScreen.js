@@ -1,0 +1,17 @@
+import React, {Component} from 'react';
+import {Image, Text, View} from 'react-native';
+import tw from 'tailwind-react-native-classnames';
+import NavOptions from '../components/NavOptions';
+
+function HomeScreen() {
+
+    return (
+        <View style={tw`p-5`}>
+            <Image style={{width:100, height:100, resizeMode:'contain'}} source={{uri: 'https://links.papareact.com/gzs'}}/>
+        <NavOptions/>
+        </View>
+    );
+}
+
+
+export default HomeScreen;
